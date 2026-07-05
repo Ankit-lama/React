@@ -1,0 +1,80 @@
+/* Full page background */
+body {
+margin: 0;
+padding: 0;
+background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+/* Main container */
+.stopwatch {
+background: #111;
+padding: 30px 40px;
+border-radius: 15px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+text-align: center;
+}
+
+/* Time display */
+.display {
+font-size: 3rem;
+color: #00ffcc;
+margin-bottom: 20px;
+letter-spacing: 2px;
+font-weight: bold;
+text-shadow: 0 0 10px #00ffcc;
+}
+
+/* Buttons container */
+.controls {
+display: flex;
+justify-content: center;
+gap: 15px;
+}
+
+/* Common button styles */
+.controls button {
+padding: 10px 20px;
+border: none;
+border-radius: 8px;
+font-size: 1rem;
+cursor: pointer;
+transition: 0.3s ease;
+color: white;
+}
+
+/* Individual button colors */
+.start {
+background-color: #28a745;
+}
+
+.stop {
+background-color: #dc3545;
+}
+
+.reset {
+background-color: #ffc107;
+color: black;
+}
+
+/* Hover effects */
+.start:hover {
+background-color: #218838;
+}
+
+.stop:hover {
+background-color: #c82333;
+}
+
+.reset:hover {
+background-color: #e0a800;
+}
+
+/* Button click effect */
+.controls button:active {
+transform: scale(0.95);
+}
